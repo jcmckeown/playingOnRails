@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  note_title: MyString
+  note_contents: MyText
+  note_auth: 
+
+two:
+  note_title: MyString
+  note_contents: MyText
+  note_auth: 

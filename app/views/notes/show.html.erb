@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>
+  <%= @note.note_title %>
+  </strong
+></p>
+
+<p>
+  <%= @note.note_contents %>
+</p>
+
+<p>
+  <strong>posted by:</strong>
+  <%= link_to @note.note_auth.display, "/users/" + @note.note_auth.id.to_s %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>
