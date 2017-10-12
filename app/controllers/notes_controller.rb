@@ -61,10 +61,6 @@ class NotesController < ApplicationController
     end
   end
 
-  def author_link
-    link_to @note.note_auth.display, user_path(@note.note_auth)
-  end
-
 private
     # Use callbacks to share common setup or constraints between actions.
     def set_note
