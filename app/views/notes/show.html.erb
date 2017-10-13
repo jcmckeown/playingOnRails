@@ -12,7 +12,7 @@
 
 <p>
   <strong>posted by:</strong>
-  <%= link_to @note.note_auth.display, "/users/" + @note.note_auth.id.to_s %>
+  <%= author_link @note.note_auth %>
 </p>
 
 <%= link_to 'Edit', edit_note_path(@note) %> |

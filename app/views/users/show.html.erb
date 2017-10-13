@@ -6,8 +6,15 @@
 </p>
 
 <p>
-  <strong>Login:</strong>
-  <%= @user.login %>
+<ul>
+  <% Note.where(note_auth: @user).to_a.each do |the_note| %>
+  <li> <%= link_to the_note.note_title , the_note %> </li>
+  <% end %>
+</ul>
+</p>
+
+<p> 
+ <%= link_to 'New note', new_note_path %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
