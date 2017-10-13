@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :note_auth %>
-    <%= form.text_field :note_auth, id: :note_note_auth %>
+    <%= select :note, :note_auth, options_from_collection_for_select(User.all , 'id', 'display'), id: :note_note_auth %>
   </div>
 
   <div class="actions">
