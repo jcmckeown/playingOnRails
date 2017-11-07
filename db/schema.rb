@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171012172656) do
+ActiveRecord::Schema.define(version: 20171106221608) do
 
   create_table "notes", force: :cascade do |t|
     t.string "note_title"
@@ -21,11 +21,20 @@ ActiveRecord::Schema.define(version: 20171012172656) do
     t.index ["note_auth_id"], name: "index_notes_on_note_auth_id"
   end
 
+  create_table "sessions", force: :cascade do |t|
+    t.integer "who_id"
+    t.string "session_id"
+    t.index ["who_id"], name: "index_sessions_on_who_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "display"
     t.string "login"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "pubkey_mod"
+    t.integer "pubkey_exp"
+    t.integer "hidnprivkey"
   end
 
   create_table "web_requests", force: :cascade do |t|
