@@ -1,0 +1,7 @@
+<ul>
+<li name="addressee"> <%= @addressee %> </li>
+<li name="pub_key" id="pub_key"> <%= @pub_key %> </li>
+<% if defined?(@hidn_key)%>
+<li name="hidden_key" id="hidden_key"> <%= @hidn_key %> </li>
+<% end %>
+</ul>

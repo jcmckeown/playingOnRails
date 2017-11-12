@@ -13,6 +13,10 @@
 </ul>
 </p>
 
+<%= button_tag "haveIAKey" , onclick: 'getMyKey("' + @user.display + '",mykeyhere)' %>
+<p id="mykeyhere" name="mykeyhere">
+</p>
+
 <p> 
  <%= link_to 'New note', new_note_path %>
 </p>
