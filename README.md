@@ -1,3 +1,7 @@
+So, I had this job for a year that took up rather a lot of time and I haven't done any work and *angstquasiblogging* and all that. 
+I don't think I'm coming back to this project for a while yet either, because of a different new one
+with a better-defined end-goal.  In javascript, mostly.
+
 # Watch Me Learn RubyOnRails!
 ## Embarassing myself on the internet
 
