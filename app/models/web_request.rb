@@ -1,2 +1,0 @@
-class WebRequest < ApplicationRecord
-end
